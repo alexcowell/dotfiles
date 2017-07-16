@@ -2,11 +2,46 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+"" Vundle config
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'altercation/vim-colors-solarized'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+
+" Enable file type detection and do language-dependent indenting.
+filetype plugin indent on
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+"
+"" end Vundle config
+
 " Set the character encoding used for all text in Vim.
 set encoding=utf-8
 
 " Set the number of terminal colours.
 set t_Co=256
+
+" Colour scheme.
+set background=light
+colorscheme solarized
 
 " Allow backspacing over indents, End-of-Lines, start of inserts,
 " as you would expect.
@@ -14,9 +49,6 @@ set backspace=indent,eol,start
 
 " Turn syntax highlighting on.
 syntax on
-
-" Enable file type detection and do language-dependent indenting.
-filetype plugin indent on
 
 " Show line numbers.
 set number
