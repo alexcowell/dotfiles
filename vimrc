@@ -53,6 +53,10 @@ syntax on
 " Show line numbers.
 set number
 
+" Show relative line numbers (useful for quickly seeing counts for motion).
+" When used with `set number`, the current line number is also shown.
+set relativenumber
+
 " Show the current cursor position (row, column).
 set ruler
 
@@ -74,6 +78,13 @@ set ignorecase
 
 " Override case insensitive search when query contains an uppercase letter.
 set smartcase
+
+" Show a menu bar with possible matches when searching with wildcards.
+set wildmenu
+
+" Ignore files you probably don't want to be searching for.
+set wildignore=*.o,*~,*.pyc,*.class
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 
 " Allow hidden buffers, don't limit to 1 file per window/split
 " (comes from old-ass needs of Vi users).
@@ -115,4 +126,7 @@ set noswapfile
 
 " Prefer unix end-of-line formats.
 set fileformats=unix,mac,dos
+
+" Add a bit of margin to the left of the line numbers.
+set foldcolumn=1
 
