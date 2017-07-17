@@ -63,6 +63,13 @@ set relativenumber
 " Show the current cursor position (row, column).
 set ruler
 
+" Don't display the Insert, Replace or Visual mode indicator as Airline puts
+" this in the status bar.
+set noshowmode
+
+" Show the (partial) command being entered in the bottom-right of the window.
+set showcmd
+
 " Don't redraw while executing macros (helps performance).
 set lazyredraw
 
@@ -73,6 +80,9 @@ set magic
 " Highlight search results.
 set hlsearch
 
+" Cancel search result highlighting with <space>.
+nnoremap <silent> <space> :nohlsearch<CR>
+
 " Incremental search.
 set incsearch
 
@@ -81,6 +91,10 @@ set ignorecase
 
 " Override case insensitive search when query contains an uppercase letter.
 set smartcase
+
+" Search down into subfolders.
+" Provides tab-completion for all file-related tasks.
+set path+=**
 
 " Show a menu bar with possible matches when searching with wildcards.
 set wildmenu
@@ -132,4 +146,19 @@ set fileformats=unix,mac,dos
 
 " Add a bit of margin to the left of the line numbers.
 set foldcolumn=1
+
+" Specify the amount of time (in milliseconds) to wait for a key code
+" or mapped key sequence to complete.
+set ttimeoutlen=10
+
+" Put new windows below the current one when splitting vertically.
+set splitbelow
+
+" Put new windows to the right of the current one when splitting horizontally.
+set splitright
+
+"" Airline plugin settings
+
+" Enable powerline fonts (requires a patched powerline font to be installed)
+let g:airline_powerline_fonts=1
 
