@@ -20,6 +20,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " Git
 Plugin 'tpope/vim-fugitive'
 
+" Change surrounding characters, tags etc. with, eg. cs"'
+Plugin 'tpope/vim-surround'
+
 " Crystal support
 Plugin 'rhysd/vim-crystal'
 
