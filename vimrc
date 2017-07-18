@@ -45,6 +45,9 @@ filetype plugin indent on
 "
 "" end Vundle config
 
+" Enable the matchit plugin (shipped with Vim) for extended % matching
+packadd! matchit
+
 " Set the character encoding used for all text in Vim.
 set encoding=utf-8
 
