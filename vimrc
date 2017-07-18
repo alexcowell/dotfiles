@@ -23,6 +23,11 @@ Plugin 'tpope/vim-fugitive'
 " Change surrounding characters, tags etc. with, eg. cs"'
 Plugin 'tpope/vim-surround'
 
+" Custom text objects
+Plugin 'kana/vim-textobj-user'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'michaeljsmith/vim-indent-object'
+
 " Crystal support
 Plugin 'rhysd/vim-crystal'
 
