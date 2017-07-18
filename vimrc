@@ -172,7 +172,6 @@ set splitright
 let g:airline_powerline_fonts=1
 
 " Easier moving between split windows
-" Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
