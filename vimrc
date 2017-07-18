@@ -17,6 +17,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" Git
+Plugin 'tpope/vim-fugitive'
+
 " Crystal support
 Plugin 'rhysd/vim-crystal'
 
