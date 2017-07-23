@@ -100,6 +100,10 @@ set hlsearch
 " Cancel search result highlighting with <space>.
 nnoremap <silent> <space> :nohlsearch<CR>
 
+" When using '*' to search for current word, don't jump to the next match,
+" keep the cursor where it is.
+nnoremap * *``
+
 " Incremental search.
 set incsearch
 
