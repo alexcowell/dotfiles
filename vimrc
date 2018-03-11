@@ -7,6 +7,8 @@ filetype off
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
+" DON'T FORGET TO RUN :PluginInstall AFTER CHANGING THIS!
 call vundle#begin()
 
 " let Vundle manage Vundle, required
@@ -16,6 +18,9 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+
+" Asynchronous linting
+Plugin 'w0rp/ale'
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -30,6 +35,9 @@ Plugin 'michaeljsmith/vim-indent-object'
 
 " Crystal support
 Plugin 'rhysd/vim-crystal'
+
+" JavaScript support
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -188,4 +196,11 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+
+"" ALE plugin settings
+
+" Slimmer and nicer-looking markers.
+let g:ale_sign_error = '✖'
+let g:ale_sign_warning = '⚠'
 
