@@ -71,6 +71,16 @@ set t_Co=256
 set background=light
 colorscheme solarized
 
+augroup vimrc
+    " Remove all auto-commands for the current group.
+    " This is to prevent strange things happening if this .vimrc is sourced
+    " twice, because the auto-commands would be included twice.
+    autocmd!
+
+    " Use the default background colour for the sign column (left of the gutter).
+    autocmd ColorScheme * highlight SignColumn ctermbg=7
+augroup END
+
 " Allow backspacing over indents, End-of-Lines, start of inserts,
 " as you would expect.
 set backspace=indent,eol,start
