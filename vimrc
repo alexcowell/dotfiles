@@ -203,10 +203,12 @@ set splitbelow
 " Put new windows to the right of the current one when splitting horizontally.
 set splitright
 
+
 "" Airline plugin settings
 
 " Enable powerline fonts (requires a patched powerline font to be installed)
 let g:airline_powerline_fonts=1
+
 
 " Easier moving between split windows
 map <C-j> <C-W>j
@@ -220,6 +222,8 @@ map <C-l> <C-W>l
 " Slimmer and nicer-looking markers.
 let g:ale_sign_error = '✖'
 let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign term=bold cterm=bold ctermfg=160 ctermbg=7
+highlight ALEWarningSign term=bold cterm=bold ctermfg=166 ctermbg=7
 
 
 " JavaScript library syntax highlighting.
