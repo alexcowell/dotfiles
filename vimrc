@@ -36,8 +36,15 @@ Plugin 'michaeljsmith/vim-indent-object'
 " Crystal support
 Plugin 'rhysd/vim-crystal'
 
-" JavaScript support
+"" JavaScript support
+" Better syntax highlighting than the Vim default.
 Plugin 'pangloss/vim-javascript'
+
+" Syntax highlighting for common JavaScript libraries.
+Plugin 'othree/javascript-libraries-syntax.vim'
+
+" Auto-completion (via omnifunc) with code analysis done by TernJS.
+Plugin 'marijnh/tern_for_vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -213,4 +220,8 @@ map <C-l> <C-W>l
 " Slimmer and nicer-looking markers.
 let g:ale_sign_error = '✖'
 let g:ale_sign_warning = '⚠'
+
+
+" JavaScript library syntax highlighting.
+let g:used_javascript_libs = 'jquery,react,chai,jasmine'
 
