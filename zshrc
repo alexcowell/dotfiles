@@ -137,3 +137,6 @@ alias tree="tree -C"
 alias serve="python -m SimpleHTTPServer 8080"
 
 source $HOME/.zshenv
+
+eval "$(rbenv init -)"
+
