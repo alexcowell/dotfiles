@@ -138,5 +138,6 @@ alias serve="python -m SimpleHTTPServer 8080"
 
 source $HOME/.zshenv
 
+eval "$(jenv init -)"
 eval "$(rbenv init -)"
 
